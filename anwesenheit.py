@@ -16,7 +16,7 @@ def show_confirmation_dialog(fach):
         return False
 
 
-csv_file = "loginfile.csv"
+csv_file = "credentials.csv"
 
 with open(csv_file, 'r') as csv_datei:
     # Erstelle einen CSV-Leser
