@@ -39,7 +39,7 @@ with open(csv_file, 'r') as csv_datei:
 
 
 
-print(wert1,wert2)
+
 #service = Service(executable_path='msedgedriver.exe')
 #options = webdriver.EdgeOptions()
 driver = webdriver.Firefox()
