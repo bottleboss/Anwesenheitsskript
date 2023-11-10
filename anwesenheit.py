@@ -32,8 +32,6 @@ with open(csv_file, 'r') as csv_datei:
         # Trenne die Werte mit einem Komma und speichere sie in Variablen
         if len(daten) >= 2:
             wert1, wert2 = daten[0], daten[1]
-            print(f'Wert 1: {wert1}')
-            print(f'Wert 2: {wert2}')
         else:
             print("Nicht genügend Werte in der Zeile.")
     except StopIteration:
