@@ -84,7 +84,7 @@ for fach, url in faecher:
     except NoSuchElementException:
         try:
             # If the first link text is not found, try the second one
-            anwesenheit_link = driver.find_element(By.LINK_TEXT, "Submit Attendance")
+            anwesenheit_link = driver.find_element(By.LINK_TEXT, "Submit attendance")
             print(f"Found element by 'Submit Attendance' link text.")
         except NoSuchElementException:
             print("Both link texts not found. Moving on to the next Fach.")
