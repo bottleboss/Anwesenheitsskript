@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.service import Service
 import tkinter as tk
 from tkinter import messagebox
 from selenium.common.exceptions import NoSuchElementException
-
+from pyvirtualdisplay import Display
 
 def show_confirmation_dialog(fach):
     result = messagebox.askyesno("Bestätigung", f"Anwesenheit für {fach} eintragen?",)
@@ -16,7 +16,7 @@ def show_confirmation_dialog(fach):
         return False
 #tedst
 
-csv_file = "credentials.csv"
+csv_file = "/home/dominik/Documents/Coding/Anwesenheitsskript/Anwesenheitsskript/credentials.csv"
 
 with open(csv_file, 'r') as csv_datei:
     # Erstelle einen CSV-Leser
@@ -40,7 +40,7 @@ with open(csv_file, 'r') as csv_datei:
 
 
 
-#service = Service(executable_path='msedgedriver.exe')
+#service = Service(executable_path='geckodriver.exe')
 #options = webdriver.EdgeOptions()
 driver = webdriver.Firefox()
 
